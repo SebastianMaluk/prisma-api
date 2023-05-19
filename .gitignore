@@ -2,4 +2,6 @@ node_modules
 .build
 .env
 .DS_Store
-dist/*
+api/prisma
+api/src
+.vercel
