@@ -6,7 +6,7 @@
 		"prettier-format": "prettier --config .prettierrc '{src,prisma}/**/*.ts' 'handler.ts' --write",
 		"lint": "eslint --ext \".js,.ts,.tsx\" --report-unused-disable-directives */*.ts",
 		"dev": "ts-node-dev --respawn --transpile-only --exit-child ./src/app.ts",
-    "vercel-build": "prisma generate && tsc "
+		"vercel-build": "prisma generate && tsc "
 	},
 	"prisma": {
 		"seed": "tsx prisma/seed.ts"
