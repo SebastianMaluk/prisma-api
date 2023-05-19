@@ -13,7 +13,7 @@ const app = Fastify({
 })
 
 // Register your application as a normal plugin.
-app.register(import('/var/task/src/vercelapp.js'))
+app.register(import('../api/src/vercelapp'))
 
 export default async (req, res) => {
   await app.ready()
