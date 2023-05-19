@@ -5,7 +5,8 @@
 		"db-reset": "prisma db push --force-reset && prisma db seed",
 		"prettier-format": "prettier --config .prettierrc '{src,prisma}/**/*.ts' 'handler.ts' --write",
 		"lint": "eslint --ext \".js,.ts,.tsx\" --report-unused-disable-directives */*.ts",
-		"dev": "ts-node-dev --respawn --transpile-only --exit-child ./src/app.ts"
+		"dev": "ts-node-dev --respawn --transpile-only --exit-child ./src/app.ts",
+    "vercel-build": "prisma generate && tsc "
 	},
 	"prisma": {
 		"seed": "tsx prisma/seed.ts"
